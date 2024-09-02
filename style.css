@@ -88,5 +88,71 @@ i{
 {
     display: flex;
     padding: 10px;
+    justify-content: flex-start;
     
 }
+
+
+
+/* Resetting list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .header, .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content1, .d1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .content1 div, .d1 div {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer .icons i {
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .header, .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content1, .d1 {
+      flex-direction: column;
+    }
+  
+    .icons {
+      margin-top: 10px;
+    }
+  }
+  
